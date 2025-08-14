@@ -155,17 +155,29 @@
 
 ## 9. 프로젝트 폴더·데이터 구조
 project/
+
 ├─ data/
+
 │ ├─ 00_raw/ # 원본(읽기 전용)
+
 │ ├─ 01_dict/ # 데이터 딕셔너리(스키마·단위·유효범위)
+
 │ ├─ 02_clean/ # 클린(형변환·보간·클램프)
+
 │ ├─ 03_curated/ # 분석/모델링용 정규화 데이터
+
 │ └─ 99_export/ # 최종 Export(CSV/DB)
+
 ├─ notebooks/
+
 ├─ src/
+
 │ ├─ features/ # VPD/GDD 등 파생변수
+
 │ ├─ control/ # 제어 로직(룰·ML·RL)
+
 │ └─ pipelines/ # ETL/스케줄러
+
 └─ README.md
 
 ------
